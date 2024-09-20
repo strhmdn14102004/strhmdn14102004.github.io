@@ -6,17 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satria Ramadan</title>
-
   <!--
     - favicon
   -->
   <link rel="shortcut icon" href="images/boy.png" type="image/x-icon">
-
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="style.css">
-
   <!--
     - google font link
   -->
@@ -85,8 +82,9 @@
             </div>
             <div class="contact-info">
               <p class="contact-title">Residence</p>
-              <a href="https://maps.app.goo.gl/9am4dgV63sUGLAz16"
-              <address>Bogor, Jawa Barat, Indonesia</address>
+              <a href="https://api.whatsapp.com/send/?phone=%2B6285174270611&text&type=phone_number&app_absent=0"
+              class="contact-link">Bogor,Jawa Barat, Indonesia.</a>
+          </div>
             </div>
           </li>
         </ul>
@@ -727,55 +725,37 @@
 
                   <img src="images/project-5.png" alt="task manager" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Toyota Big Part</h3>
-
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="images/project-8.jpg" alt="task manager" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Attendance</h3>
-
                 <p class="project-category">Applications</p>
-
               </a>
             </li>
-
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="images/project-9.png" alt="arrival" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Arrival</h3>
-
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
-
           </ul>
-
         </section>
-
       </article>
-
       <div id="customAlert" class="custom-alert" style="display: none;">
         <div class="alert-content">
           <span id="alertMessage"></span>
@@ -785,7 +765,6 @@
       <!--
         - #CONTACT
       -->
-
       <article class="contact" data-page="contact">
         <header>
           <h2 class="h2 article-title">Contact</h2>
@@ -798,7 +777,6 @@
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
-
         <section class="contact-form">
           <h3 class="h3 form-title">Send Message To Satria</h3>
           <form id="contactForm" class="form">
@@ -821,16 +799,8 @@
 
         </section>
       </article>
-
     </div>
-
   </main>
-
-
-
-
-
-
   <!--
     - custom js link
   -->
@@ -841,24 +811,18 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
   <script>
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
-
       const fullname = document.getElementById('fullname').value;
       const email = document.getElementById('email').value;
       const message = document.getElementById('message').value;
-
       const token = "6998528299:AAF-IfmNR4SHLbL3qYy9qDwMfW4ghq1izTE";
       const chat_id = "5802480458";
       const text = `Nama: ${fullname}\nEmail: ${email}\nPesan: ${message}`;
-
       const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${encodeURIComponent(text)}`;
-
       const progressIndicator = document.getElementById('progressIndicator');
       progressIndicator.style.display = 'flex';
-
       fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -875,22 +839,16 @@
           showAlert('Pesan Gagal Dikirim');
         });
     });
-
     function showAlert(message) {
       const alertBox = document.getElementById('customAlert');
       const alertMessage = document.getElementById('alertMessage');
       alertMessage.textContent = message;
       alertBox.style.display = 'block';
     }
-
     function closeAlert() {
       const alertBox = document.getElementById('customAlert');
       alertBox.style.display = 'none';
     }
   </script>
-
-
-
 </body>
-
 </html>
