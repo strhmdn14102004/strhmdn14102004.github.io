@@ -1,1 +1,1 @@
-Kode website pribadi satria ramadan
+website pribadi satria ramadan
