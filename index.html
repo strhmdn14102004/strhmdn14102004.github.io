@@ -569,7 +569,43 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
-   
+   document.getElementById('contactForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const fullname = document.getElementById('fullname').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const token = "6998528299:AAF-IfmNR4SHLbL3qYy9qDwMfW4ghq1izTE";
+  const chat_id = "5802480458";
+  const text = `Nama: ${fullname}\nEmail: ${email}\nPesan: ${message}`;
+  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${encodeURIComponent(text)}`;
+  const progressIndicator = document.getElementById('progressIndicator');
+  progressIndicator.style.display = 'flex';
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      progressIndicator.style.display = 'none';
+      if (data.ok) {
+        showAlert('Pesan Berhasil Dikirim');
+      } else {
+        showAlert('Pesan Gagal Dikirim');
+      }
+    })
+    .catch(error => {
+      progressIndicator.style.display = 'none';
+      console.error('Error:', error);
+      showAlert('Pesan Gagal Dikirim');
+    });
+});
+function showAlert(message) {
+  const alertBox = document.getElementById('customAlert');
+  const alertMessage = document.getElementById('alertMessage');
+  alertMessage.textContent = message;
+  alertBox.style.display = 'block';
+}
+function closeAlert() {
+  const alertBox = document.getElementById('customAlert');
+  alertBox.style.display = 'none';
+}
   </script>
 </body>
 </html>
