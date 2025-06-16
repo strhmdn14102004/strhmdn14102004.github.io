@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-white overflow-x-hidden;
+}
+
+/* 3D Flip Card Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.transform-rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Custom scrollbar hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Project card sizing */
+.project-card {
+  @apply h-64 w-72;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    @apply w-80;
+  }
+}
