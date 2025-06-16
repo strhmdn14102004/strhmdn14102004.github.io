@@ -104,22 +104,11 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="mx-auto mb-8 w-32 h-32 rounded-full border-2 border-white/10 shadow-lg overflow-hidden"
         >
-          {/* Fixed image source - use one of these options: */}
-          {/* Option 1: Use an image from your public folder */}
           <img 
-            src="/profile.jpg"  // Make sure to put your image in the public folder
+            src="public/profile.png" 
             alt="Profile" 
             className="w-full h-full object-cover"
           />
-          
-          {/* Option 2: Use a direct image URL from a hosting service */}
-          {/*
-          <img 
-            src="https://example.com/path-to-your-image.jpg" 
-            alt="Profile" 
-            className="w-full h-full object-cover"
-          />
-          */}
         </motion.div>
 
         <motion.h1
