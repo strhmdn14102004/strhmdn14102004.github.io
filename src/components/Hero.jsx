@@ -105,7 +105,7 @@ export default function Hero() {
           className="mx-auto mb-8 w-32 h-32 rounded-full border-2 border-white/10 shadow-lg overflow-hidden"
         >
           <img 
-            src="src/assets/profile.jpg" 
+            src="https://drive.google.com/file/d/1gctY6YnQ_0a1wL1qVBjiiiMVMtQ1u-zX/view?usp=sharing" 
             alt="Profile" 
             className="w-full h-full object-cover"
           />
