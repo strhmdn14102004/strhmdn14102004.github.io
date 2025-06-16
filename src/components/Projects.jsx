@@ -27,25 +27,25 @@ export default function Projects() {
   const projects = [
     {
       title: {
-        en: "Flutter Attendance App",
-        id: "Aplikasi Absensi Flutter"
+        en: "CCTV Monitoring Application in Indonesian Cities",
+        id: "Aplikasi Pantau Cctv Kota Di Indonesia"
       },
       description: {
-        en: "Location-based attendance system with notifications and Firebase.",
-        id: "Sistem absensi berbasis lokasi dengan notifikasi dan Firebase."
+        en: "application system, to monitor CCTV in Indonesia, created with Flutter and Golang backend API.",
+        id: "sistem aplikasi, untuk memantau cctv di indonesia, di buat dengan flutter dan backend api golang"
       },
       tags: ["Flutter", "Firebase", "Geolocation"],
-      image: "https://cdn-icons-png.flaticon.com/512/919/919853.png",
-      link: "#"
+      image: "https://website-pantau-cctv.vercel.app/assets/images/icon.png",
+      link: "https://website-pantau-cctv.vercel.app/ "
     },
     {
       title: {
-        en: "Inventory API",
-        id: "API Inventaris Barang"
+        en: "Api Sattech",
+        id: "API Sattech"
       },
       description: {
-        en: "REST API with Node.js and MongoDB for warehouse application.",
-        id: "REST API dengan Node.js dan MongoDB untuk aplikasi gudang."
+        en: "REST API with Node.js and MongoDB for sale application.",
+        id: "REST API dengan Node.js dan MongoDB untuk aplikasi penjualan."
       },
       tags: ["Node.js", "Express", "MongoDB"],
       image: "https://cdn-icons-png.flaticon.com/512/919/919825.png",
@@ -66,12 +66,12 @@ export default function Projects() {
     },
     {
       title: {
-        en: "E-commerce App",
-        id: "Aplikasi E-commerce"
+        en: "Sattech",
+        id: "Sattech"
       },
       description: {
-        en: "Mobile e-commerce application with payment integration.",
-        id: "Aplikasi e-commerce mobile dengan integrasi pembayaran."
+        en: "Mobile e-commerce application with payment integration, and firebase cloud messaging for notification.",
+        id: "Aplikasi mobile dengan integrasi pembayaran, firebase cloud messaging sebagai notifikasi."
       },
       tags: ["Flutter", "Firebase", "Stripe"],
       image: "https://cdn-icons-png.flaticon.com/512/2965/2965300.png",

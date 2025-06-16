@@ -121,7 +121,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h5 className="font-medium text-gray-500 dark:text-gray-300">Phone</h5>
-                    <a href="tel:+628123456789" className="text-lg font-medium hover:text-green-600 dark:hover:text-green-400 transition">
+                    <a href="tel:+6285174270611" className="text-lg font-medium hover:text-green-600 dark:hover:text-green-400 transition">
                       +62 851-7427-0611
                     </a>
                   </div>
@@ -162,7 +162,7 @@ export default function Contact() {
                   <span className="font-medium">Instagram</span>
                 </a>
                  <a 
-                  href="https://instagram.com/strhmdn_" 
+                  href="https://api.whatsapp.com/send/?phone=%2B6285174270611&text&type=phone_number&app_absent=0" 
                   target="_blank" 
                   rel="noreferrer"
                   className="flex items-center gap-3 p-4 bg-gray-50 dark:bg-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition"
